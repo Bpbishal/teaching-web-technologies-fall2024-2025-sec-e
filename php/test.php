@@ -59,7 +59,11 @@
 
     for($i=0; $i<10; $i++){
 
-        print("My name is alamin\r\n");
+        print("My name is alamin<br>");
+    }
+
+    foreach($std as $s){
+        echo $s;
     }
 
 ?>
