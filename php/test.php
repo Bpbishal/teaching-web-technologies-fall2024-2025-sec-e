@@ -66,4 +66,15 @@
         echo $s;
     }
 
+    $a =10;
+    $b =20;
+
+    function sum(){
+        global $a;
+        global $b;
+        $c = $a+$b;
+        //$c = $GLOBALS['a']+$GLOBALS['b'];
+        return $c;
+    }
+
 ?>
