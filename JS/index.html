@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <title>JS Example</title>
+</head>
+<body>
+        <h1 id="head" onclick="f1()">JS Example</h1>
+        <form action="" method="" enctype="" onsubmit="return test()">
+            <input type="text" id="username" name="" value="" onkeyup="f2()"/>
+            <input type="button" id="btn" name="" value="Click" onclick="f2()" />
+            <p id="msg"> </p>
+        </form>
+        <script>
+            //name = 'alamin';
+            //var name = 'alamin';
+            let name = 'alamin';
+            let std = ['alamin', 1, 2.5, 'alamin@aiub.edu'];
+
+            // for(let i=0; i<10; i++){
+
+            // }
+
+            // if(){
+
+            // }else{
+
+            // }
+
+            // function sum(a, b){
+            //     return a+b;
+            // }
+
+            // let f1 = function(a, b){
+            //     return a+b;
+            // }
+
+            // let f2 = (a,b)=>{
+            //     let c =a+b;
+            //     return c;
+            // }
+            // f1(10, 20);
+
+            //console.log('test');
+            //alert('test');
+            //document.write('Testing from JS...');
+
+            function f1(){
+                //let headElement =document.getElementsByTagName('h1')[0];
+                let headElement =document.getElementById('head');
+                headElement.innerHTML = "test";
+                headElement.style.color = "red";
+            }
+
+            function f2(){
+                let username = document.getElementById('username').value;
+
+                if(username == ""){
+                    document.getElementById('msg').innerHTML = "Please type username..";
+                    document.getElementById('msg').style.color = 'red';
+                }else{
+                    document.getElementById('head').innerHTML = username;
+                    document.getElementById('msg').innerHTML = "";
+                }
+
+                //setTimeout()
+
+            }
+        </script>
+</body>
+</html>
